@@ -96,4 +96,9 @@ export class PokemonService {
     console.log(error);
     throw new InternalServerErrorException(`Can't create Pokemon - Check server logs`);
   }
+
+  async fillPokemonsDBWithSeedData(pokemons: CreatePokemonDto[]) {
+    await this.pokemonModel.deleteMany({});
+    return await this.pokemonModel.insertMany(pokemons);
+  }
 }

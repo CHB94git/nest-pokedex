@@ -30,6 +30,14 @@ $ npm i -g nestjs/cli
 $ docker-compose up -d
 ```
 
+## Reconstruir la información de la BD con el seed(semilla)
+
+```bash
+# development
+$ {{BASE_URL}}/api/v2/pokemon
+$ BASE_URL = http://localhost:3000
+```
+
 ## Ejecutar la aplicación
 
 ```bash
