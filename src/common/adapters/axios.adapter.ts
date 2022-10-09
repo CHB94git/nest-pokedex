@@ -9,10 +9,10 @@ export class AxiosAdapter implements HttpAdapter {
   async get<T>(url: string): Promise<T> {
     try {
       const { data } = await this.httpService.axiosRef.get<T>(url);
+      console.log('Axios Adapter');
       return data;
     } catch (error) {
       throw new Error('This is an error - check logs');
     }
   }
-
 }

@@ -14,5 +14,4 @@ export class FetchAdapter implements HttpAdapter {
       throw new Error('This is an error - check logs');
     }
   }
-
 }

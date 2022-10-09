@@ -3,6 +3,7 @@
 </p>
 
 ## Descripción
+
 Project API REST Pokedex with Node, NestJS, Docker and Mongo
 
 # Ejecutar en desarrollo
@@ -12,10 +13,16 @@ Project API REST Pokedex with Node, NestJS, Docker and Mongo
 ## Installation - node_modules
 
 ```bash
+With npm:
 $ npm install
 ```
 
-## Instalar Nest CLI 
+```bash
+With yarn:
+$ yarn install or yarn
+```
+
+## Instalar Nest CLI
 
 ```bash
 # Global
@@ -30,12 +37,19 @@ $ npm i -g nestjs/cli
 $ docker-compose up -d
 ```
 
+## Clonar el archivo `.env.template` y renombrar la copia a **.env**
+
+```bash
+# development
+$ Establecer los valores a las variables de entorno en .env
+```
+
 ## Reconstruir la información de la BD con el seed(semilla)
 
 ```bash
 # development
-$ {{BASE_URL}}/api/v2/pokemon
 $ BASE_URL = http://localhost:3000
+$ {{BASE_URL}}/api/v2/pokemon
 ```
 
 ## Ejecutar la aplicación
@@ -43,11 +57,16 @@ $ BASE_URL = http://localhost:3000
 ```bash
 # development
 $ npm run start
+or
+$ yarn start
 
 # watch mode
 $ npm run start:dev
+or
+$ yarn start:dev
 
 # production mode
 $ npm run start:prod
+or
+$ yarn start:prod
 ```
-
