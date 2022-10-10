@@ -70,3 +70,21 @@ $ npm run start:prod
 or
 $ yarn start:prod
 ```
+
+## Build de producción
+
+# production
+
+1. Crear el archivo **.env.prod**
+2. LLenar las variables de entorno de producción
+3. Crear la nueva imagen
+
+```bash
+ docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+4. Ejecutar solamente imagen
+
+```bash
+ docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+```
