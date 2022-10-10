@@ -1,0 +1,7 @@
+db.txt
+mongo/
+dist/
+node_modules/
+.gitignore
+
+.git/

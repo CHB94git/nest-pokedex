@@ -8,7 +8,6 @@ import { PokemonService } from './pokemon.service';
   controllers: [PokemonController],
   providers: [PokemonService],
   imports: [
-    // ConfigModule set global in app.module
     // ConfigModule,
     MongooseModule.forFeature([
       {
