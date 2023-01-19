@@ -5,9 +5,11 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
   const configService = app.get(ConfigService);
   const PORT = configService.get<number>('port');
   const environment = configService.get<string>('environment');
+
   app.setGlobalPrefix('api');
 
   app.enableVersioning({

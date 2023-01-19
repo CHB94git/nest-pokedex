@@ -1,4 +1,4 @@
-version: '3'
+version: '3.9'
 
 services:
   pokedexapp:
@@ -21,7 +21,7 @@ services:
     #   - ./:/var/www/pokedex
 
   db:
-    image: mongo:5.0.0
+    image: mongo:6.0.3
     container_name: mongo-pokemon
     restart: always
     ports:
